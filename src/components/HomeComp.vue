@@ -63,7 +63,7 @@ td{
   color:white;
   cursor:pointer;
   background-color:rgb(12, 222, 26) ;
-  margin-right:10px;
+  margin:10px;
 }
 #two{
   width:60px;
@@ -72,5 +72,6 @@ td{
   color:white;
   cursor:pointer;
   background-color:rgb(222, 12, 12) ;
+  margin:10px;
 }
 </style>
