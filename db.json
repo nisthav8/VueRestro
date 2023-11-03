@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "email": "abc@gmail.com",
+      "name": "abc",
+      "password": "abc@123",
+      "id": 1
+    },
+    {
+      "email": "xyz@gmail.com",
+      "name": "xyz",
+      "password": "xyz@123",
+      "id": 2
+    },
+    {
+      "email": "Nistha@gmail.com",
+      "name": "Nistha",
+      "password": "Nistha@123",
+      "id": 3
+    },
+    {
+      "email": "",
+      "name": "",
+      "password": "",
+      "id": 4
+    },
+    {
+      "email": "",
+      "name": "",
+      "password": "",
+      "id": 5
+    }
+  ],
+  "restaurant": [
+    {
+      "name": "Dominos",
+      "address": "Near Bus Stand,Motihari",
+      "contact": "8051965876",
+      "id": 2
+    },
+    {
+      "name": "Laziz Pizza",
+      "address": "Chandmari,Motihari",
+      "contact": "9870132456",
+      "id": 3
+    },
+    {
+      "name": "KFC",
+      "address": "Chatauni,Motihari",
+      "contact": "8084679272",
+      "id": 4
+    }
+  ]
+}
