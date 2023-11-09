@@ -25,8 +25,11 @@ export default {
     async logIn() {
       let result = await axios.get(`http://localhost:3000/users/?email=${this.email}&password=${this.password}`)
 
-      console.log(result);
-        if (result.status == 200 && result.data.length>0) {
+      console.log("login",result);
+       if (result.data.length==0 || result.data[0].email === '' || result.data[0].password === '') {
+        this.$router.push({ name: 'LogIn' })
+      }
+       else if (result.status == 200) {
 
        
         localStorage.setItem("user-info", JSON.stringify(result.data[0]))
@@ -36,12 +39,11 @@ export default {
   },
    mounted() {
     let user = localStorage.getItem("user-info")
-    if (user) {
+  
+   if (user) {
       this.$router.push({ name: 'HomeComp' })
     }
-    if (!user) {
-      this.$router.push({ name: 'LogIn' })
-    }
+   
   }
 }
 </script>

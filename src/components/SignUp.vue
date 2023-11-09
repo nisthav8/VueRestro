@@ -26,8 +26,11 @@ import axios from 'axios'
     methods: {
       async signUp(){
         let result= await axios.post(" http://localhost:3000/users",{email:this.email,name:this.name,password:this.password});
-        console.log(result)
-        if(result.status==201) {
+        console.log("signup",result)
+           if (result.data.email=='' || result.data.password=='' || result.data.name=='') {
+        this.$router.push({ name: 'SignUp' })
+      }
+      else if(result.status==201) {
 
         this.$router.push({name:'HomeComp'})
         localStorage.setItem("user-info",JSON.stringify(result.data))
